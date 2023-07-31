@@ -18,7 +18,7 @@ public sealed class WeaponInitializer : Initializer
         foreach (var entity in _filter)
         {
             ref var weaponHolder = ref entity.GetComponent<WeaponComponent>();
-            _weaponGO = Instantiate(weaponHolder.Prefab, weaponHolder.Transform.position, Quaternion.Euler(90f, 0f, 0f),
+            _weaponGO = Instantiate(weaponHolder.Prefab, weaponHolder.Transform.position, Quaternion.identity,
                 weaponHolder.Transform);
         }
     }

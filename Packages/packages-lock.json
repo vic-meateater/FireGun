@@ -14,6 +14,13 @@
       "dependencies": {},
       "hash": "46f35461fba414213dae80a96e6bb527c40f92dc"
     },
+    "com.scellecs.morpeh.globals": {
+      "version": "https://github.com/scellecs/morpeh.globals.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "6d6bc0b91bb5b747d7ce80116f44067a79ad0a9b"
+    },
     "com.unity.burst": {
       "version": "1.8.7",
       "depth": 1,
