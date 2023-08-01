@@ -10,13 +10,11 @@ using Unity.IL2CPP.CompilerServices;
 public sealed class AutoFireFixedSystem : FixedUpdateSystem
 {
     private Filter _weaponFilter;
-    private Filter _bulletFilter;
-    private Transform _bulletSpawnPoint;
-    
+
     public override void OnAwake()
     {
         _weaponFilter = World.Filter.With<WeaponComponent>();
-        _bulletFilter = World.Filter.With<BulletComponent>();
+
     }
 
     public override void OnUpdate(float deltaTime)
@@ -24,17 +22,33 @@ public sealed class AutoFireFixedSystem : FixedUpdateSystem
         foreach (var entity in _weaponFilter)
         {
             ref var weapon = ref entity.GetComponent<WeaponComponent>();
-            _bulletSpawnPoint = weapon.BluuletSpawnPoint;
-            
-            foreach (var bulletEntity in _bulletFilter)
-            {
-                ref var bullet = ref bulletEntity.GetComponent<BulletComponent>();
-                var bulletGO = Instantiate(bullet.Prefab, _bulletSpawnPoint.position, Quaternion.identity);
 
-                var bulletRB = bulletGO.GetComponentInChildren<Rigidbody>();
-                //bulletRB.velocity = bulletGO.transform.position * 3f;
+            if (CanShoot(weapon))
+            {
+                var bulletGO = weapon.bulletPool.Get();
+
+
+                if (bulletGO != null)
+                {
+                    bulletGO.transform.position = weapon.BulletSpawnPoint.position;
+
+                    var bulletRigidbody = bulletGO.GetComponentInChildren<Rigidbody>();
+
+                    //TODO: заменить скорость полета пули 4f
+                    bulletRigidbody.velocity = weapon.BulletSpawnPoint.forward * 4f;
+
+                    weapon.LastShotTime = Time.time;
+                }
             }
+            
+
         }
 
+    }
+    
+    private bool CanShoot(WeaponComponent weapon)
+    {
+        //TODO: заменить магическое число
+        return Time.time - weapon.LastShotTime >= weapon.FireRate;
     }
 }

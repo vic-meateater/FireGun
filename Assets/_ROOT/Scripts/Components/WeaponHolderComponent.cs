@@ -1,6 +1,7 @@
 using Scellecs.Morpeh;
 using UnityEngine;
 using Unity.IL2CPP.CompilerServices;
+using UnityEngine.Serialization;
 
 [System.Serializable]
 [Il2CppSetOption(Option.NullChecks, false)]
@@ -8,10 +9,7 @@ using Unity.IL2CPP.CompilerServices;
 [Il2CppSetOption(Option.DivideByZeroChecks, false)]
 public struct WeaponHolderComponent : IComponent
 {
-    public GameObject Prefab;
+    public GameObject WeaponPrefab;
     public Transform Transform;
-    public Transform BulletSpawnPosition;
-    public float MoveSpeed;
-    public float FireRate;
     public Camera Camera;
 }

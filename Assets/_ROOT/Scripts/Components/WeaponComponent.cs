@@ -1,7 +1,8 @@
-using System.Collections.Generic;
 using Scellecs.Morpeh;
 using UnityEngine;
 using Unity.IL2CPP.CompilerServices;
+using UnityEngine.Pool;
+
 
 [System.Serializable]
 [Il2CppSetOption(Option.NullChecks, false)]
@@ -9,7 +10,11 @@ using Unity.IL2CPP.CompilerServices;
 [Il2CppSetOption(Option.DivideByZeroChecks, false)]
 public struct WeaponComponent : IComponent
 {
-    public Transform BluuletSpawnPoint;
-    public List<BulletComponent> Clips;
+    public Transform BulletSpawnPoint;
+    public GameObject BulletPrefab;
+    public ObjectPool<GameObject> bulletPool;
     public int BulletAmount;
+    public float WeaponMoveSpeed;
+    public float FireRate;
+    public float LastShotTime;
 }

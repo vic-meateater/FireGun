@@ -1,15 +1,17 @@
-﻿using System;
+﻿using Scellecs.Morpeh;
 using UnityEngine;
+using Unity.IL2CPP.CompilerServices;
 
-namespace _ROOT.Scripts.Handlers
+[System.Serializable]
+[Il2CppSetOption(Option.NullChecks, false)]
+[Il2CppSetOption(Option.ArrayBoundsChecks, false)]
+[Il2CppSetOption(Option.DivideByZeroChecks, false)]
+public struct BulletInfo: IComponent
 {
-    [Serializable]
-    public struct BulletInfo
-    {
-        public BulletsType bulletType;
-        public GameObject bulletPrefab;
-    }
+    public BulletsType bulletType;
+    public GameObject bulletPrefab;
 }
+
 
 public enum BulletsType
 {

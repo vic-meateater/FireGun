@@ -9,8 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5df84c33715a2884b8644cbecd038a5f, type: 3}
-  m_Name: GameConfig
+  m_Script: {fileID: 11500000, guid: 542e559cd99b1ff4795f0ebcbfe3aa36, type: 3}
+  m_Name: Bullet Initializer
   m_EditorClassIdentifier: 
-  <SpawnPoint>k__BackingField: {fileID: 7061914932028974201, guid: 3c20267af85bf7b41bac92b4f3e081e2,
-    type: 3}

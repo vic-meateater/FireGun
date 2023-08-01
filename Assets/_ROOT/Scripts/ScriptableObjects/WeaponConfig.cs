@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using _ROOT.Scripts.Handlers;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = nameof(WeaponConfig), menuName = "FireGun/Config/" + nameof(WeaponConfig))]

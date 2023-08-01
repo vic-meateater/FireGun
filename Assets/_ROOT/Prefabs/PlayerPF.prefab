@@ -173,12 +173,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializedData:
-    Prefab: {fileID: 4630855400845448514, guid: 8db74ace0556c0f4596b0d84ee8e3950,
+    WeaponPrefab: {fileID: 4630855400845448514, guid: 8db74ace0556c0f4596b0d84ee8e3950,
       type: 3}
     Transform: {fileID: 4316506864180405837}
-    BulletSpawnPosition: {fileID: 0}
-    MoveSpeed: 1
-    FireRate: 1
     Camera: {fileID: 8435167302481619516}
 --- !u!1 &2162377084173711796
 GameObject:
@@ -318,5 +315,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializedData:
-    MovementSpeed: 1
+    MovementSpeed: 0
     Transform: {fileID: 6298571058585042715}
