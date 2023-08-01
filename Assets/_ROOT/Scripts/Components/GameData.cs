@@ -11,4 +11,5 @@ public struct GameData : IComponent
 {
     [field: SerializeField] public PlayerConfig PlayerConfig { get; private set; }
     [field: SerializeField] public GameConfig GameConfig { get; private set; }
+    [field: SerializeField] public WeaponConfig WeaponConfig { get; private set; }
 }

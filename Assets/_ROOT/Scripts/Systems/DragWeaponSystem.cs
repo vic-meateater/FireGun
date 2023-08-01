@@ -13,14 +13,14 @@ public sealed class DragWeaponSystem : UpdateSystem
 
     public override void OnAwake()
     {
-        _filter = World.Filter.With<WeaponComponent>();
+        _filter = World.Filter.With<WeaponHolderComponent>();
     }
 
     public override void OnUpdate(float deltaTime)
     {
         foreach (var entity in _filter)
         {
-            ref var weaponHolder = ref entity.GetComponent<WeaponComponent>();
+            ref var weaponHolder = ref entity.GetComponent<WeaponHolderComponent>();
             
             var camera = weaponHolder.Camera;
             var weaponTransform = weaponHolder.Transform;

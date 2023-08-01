@@ -14,10 +14,10 @@ public sealed class WeaponInitializer : Initializer
 
     public override void OnAwake()
     {
-        _filter = World.Filter.With<WeaponComponent>();
+        _filter = World.Filter.With<WeaponHolderComponent>();
         foreach (var entity in _filter)
         {
-            ref var weaponHolder = ref entity.GetComponent<WeaponComponent>();
+            ref var weaponHolder = ref entity.GetComponent<WeaponHolderComponent>();
             _weaponGO = Instantiate(weaponHolder.Prefab, weaponHolder.Transform.position, Quaternion.identity,
                 weaponHolder.Transform);
         }

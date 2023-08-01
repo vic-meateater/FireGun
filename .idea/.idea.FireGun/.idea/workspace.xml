@@ -5,24 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb95a29f-1b5e-48cb-ba00-c7c361db3bd0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Handlers/BulletInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Handlers/BulletInfo.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FireGun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FireGun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Poly Guns/Models/Guns/pistol1/pistol1.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Low Poly Guns/Models/Guns/pistol1/pistol1.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Poly Guns/Models/Guns/pistol2/pistol2.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Low Poly Guns/Models/Guns/pistol2/pistol2.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Poly Guns/Models/Guns/pistol3/pistol3.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Low Poly Guns/Models/Guns/pistol3/pistol3.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Low Poly Guns/Models/Guns/pistol4/pistol4.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Low Poly Guns/Models/Guns/pistol4/pistol4.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Prefabs/PlayerPF.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Prefabs/PlayerPF.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Prefabs/Enemies/ZombiePF.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Prefabs/Enemies/ZombiePF.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Prefabs/Weapons/GunBullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Prefabs/Weapons/GunBullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Prefabs/Weapons/PistolDesrtEaglePF.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Prefabs/Weapons/PistolDesrtEaglePF.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Components/GameData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Components/GameData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Components/WeaponComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Components/WeaponComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Components/WeaponComponent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Components/WeaponComponent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Providers/WeaponProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Providers/WeaponHolderProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Providers/WeaponProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Providers/WeaponHolderProvider.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/DragWeaponSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/DragWeaponSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/Init/WeaponInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/Init/WeaponInitializer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,11 +34,13 @@
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Components/MovableComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Components/PlayerData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Components/WeaponComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Components/WeaponHolderComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Providers/GameDataProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Providers/MovableProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Providers/PlayerDataProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Providers/UIStartButtonClickedProvider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Providers/WeaponProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Providers/WeaponHolderProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/ScriptableObjects/WeaponConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/DragWeaponSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/MovementForwardSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/UI/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -115,10 +113,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="6984">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="6984" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -139,6 +137,8 @@
       <workItem from="1690696850006" duration="27910000" />
       <workItem from="1690780777649" duration="5733000" />
       <workItem from="1690796583147" duration="2918000" />
+      <workItem from="1690869825765" duration="3254000" />
+      <workItem from="1690880531277" duration="8688000" />
     </task>
     <servers />
   </component>

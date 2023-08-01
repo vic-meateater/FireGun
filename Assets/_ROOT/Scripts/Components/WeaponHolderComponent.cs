@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using Scellecs.Morpeh;
 using UnityEngine;
 using Unity.IL2CPP.CompilerServices;
@@ -7,9 +6,12 @@ using Unity.IL2CPP.CompilerServices;
 [Il2CppSetOption(Option.NullChecks, false)]
 [Il2CppSetOption(Option.ArrayBoundsChecks, false)]
 [Il2CppSetOption(Option.DivideByZeroChecks, false)]
-public struct WeaponComponent : IComponent
+public struct WeaponHolderComponent : IComponent
 {
-    public Transform BluuletSpawnPoint;
-    public List<BulletComponent> Clips;
-    public int BulletAmount;
+    public GameObject Prefab;
+    public Transform Transform;
+    public Transform BulletSpawnPosition;
+    public float MoveSpeed;
+    public float FireRate;
+    public Camera Camera;
 }
