@@ -43,9 +43,7 @@ public sealed class DragWeaponSystem : UpdateSystem
                     // Устанавливаем новую позицию оружия
                     weaponTransform.position = new Vector3(touchPosition.x, touchPosition.y, touchPosition.z);
                     //weaponTransform.position = touchPosition;
-                    
-                    
-                    Debug.Log(weaponTransform.position);
+
                 }
             }
         }
