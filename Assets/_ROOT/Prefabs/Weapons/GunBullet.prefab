@@ -73,6 +73,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedComponents:
   - rid: 7026622602826219524
+  - rid: 7026622650472726529
   references:
     version: 2
     RefIds:
@@ -82,6 +83,10 @@ MonoBehaviour:
         Prefab: {fileID: 730460773223960952}
         SpawnPosition: {fileID: 0}
         Transform: {fileID: 4894468622561795943}
+    - rid: 7026622650472726529
+      type: {class: CollisionComponent, ns: , asm: Assembly-CSharp}
+      data:
+        Collision: {fileID: 730460773223960952}
 --- !u!54 &7873992120585373305
 Rigidbody:
   m_ObjectHideFlags: 0

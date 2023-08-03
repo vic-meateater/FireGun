@@ -5,27 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb95a29f-1b5e-48cb-ba00-c7c361db3bd0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/Init/WeaponHolderInitializer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FireGun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FireGun/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Systems/Init/New Weapon Initializer.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Systems/Init/New Weapon Initializer.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Systems/New Player Initializer.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Systems/New Player Initializer.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Prefabs/PlayerPF 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Prefabs/PlayerPF 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Prefabs/PlayerPF.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Prefabs/PlayerPF.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Prefabs/Weapons/GunBullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Prefabs/Weapons/GunBullet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Prefabs/Weapons/PistolDesrtEaglePF.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Prefabs/Weapons/PistolDesrtEaglePF.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Components/WeaponComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Components/WeaponComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Components/WeaponComponent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Components/WeaponComponent.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Components/WeaponHolderComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Components/WeaponHolderComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Configs/GameConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Configs/GameConfig.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Handlers/BulletInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Handlers/BulletInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Handlers/BulletInfo.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Handlers/BulletInfo.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/ScriptableObjects/WeaponConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/ScriptableObjects/WeaponConfig.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/AutoFireFixedSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/AutoFireFixedSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/Init/WeaponInitializer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/Init/WeaponInitializer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/Init/WeaponHolderInitializer.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,9 +63,9 @@
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "C:\\Users\\Vic\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Vic\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\Vic\\AppData\\Local\\Symbols\\src"
+      "C:\\Users\\vm\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\vm\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\vm\\AppData\\Local\\Symbols\\src"
     ]
   }
 }]]></component>
@@ -148,6 +131,7 @@
       <workItem from="1690869825765" duration="3254000" />
       <workItem from="1690880531277" duration="8688000" />
       <workItem from="1690899402043" duration="12287000" />
+      <workItem from="1691062193267" duration="1026000" />
     </task>
     <servers />
   </component>

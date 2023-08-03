@@ -30,6 +30,7 @@ public sealed class AutoFireFixedSystem : FixedUpdateSystem
 
                 if (bulletGO != null)
                 {
+                    
                     bulletGO.transform.position = weapon.BulletSpawnPoint.position;
 
                     var bulletRigidbody = bulletGO.GetComponentInChildren<Rigidbody>();
@@ -40,8 +41,6 @@ public sealed class AutoFireFixedSystem : FixedUpdateSystem
                     weapon.LastShotTime = Time.time;
                 }
             }
-            
-
         }
 
     }
