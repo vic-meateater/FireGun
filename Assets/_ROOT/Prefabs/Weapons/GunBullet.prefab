@@ -150,6 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d077fdbdd4856d44d8d8a9cbbc293222, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _collisionEvent: {fileID: 11400000, guid: d3c7c70d1bf938c4987fa3fa89c20246, type: 2}
 --- !u!1 &5836434918232937078
 GameObject:
   m_ObjectHideFlags: 0

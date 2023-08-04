@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8627076d0d0712744aeb070bd318d324, type: 3}
   m_Name: Collision System
   m_EditorClassIdentifier: 
+  objectGlobalEventReact: {fileID: 11400000, guid: d3c7c70d1bf938c4987fa3fa89c20246,
+    type: 2}

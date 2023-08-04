@@ -2,6 +2,9 @@ using Scellecs.Morpeh;
 using Scellecs.Morpeh.Systems;
 using UnityEngine;
 using Unity.IL2CPP.CompilerServices;
+using Scellecs.Morpeh.Globals.Events;
+using System.Collections.Generic;
+using System;
 
 [Il2CppSetOption(Option.NullChecks, false)]
 [Il2CppSetOption(Option.ArrayBoundsChecks, false)]
@@ -10,11 +13,23 @@ using Unity.IL2CPP.CompilerServices;
 public sealed class AutoFireFixedSystem : FixedUpdateSystem
 {
     private Filter _weaponFilter;
+    private Filter _collisionEntityFilter;
+    private Filter _collisionBulletFilter;
+
+    public GlobalEventObject OnBulletCollisionReact;
 
     public override void OnAwake()
     {
         _weaponFilter = World.Filter.With<WeaponComponent>();
+        _collisionEntityFilter = World.Filter.With<CollisionReactComponent>();
+        _collisionBulletFilter = World.Filter.With<CollisionReactComponent>().With<BulletComponent>();
+        OnBulletCollisionReact.Subscribe(onReact);
 
+    }
+
+    private void onReact(IEnumerable<UnityEngine.Object> obj)
+    {
+        
     }
 
     public override void OnUpdate(float deltaTime)
@@ -41,7 +56,14 @@ public sealed class AutoFireFixedSystem : FixedUpdateSystem
                     weapon.LastShotTime = Time.time;
                 }
             }
+            if (OnBulletCollisionReact)
+            {
+                Debug.Log($"Всего коллизий - {_collisionBulletFilter}");
+                Debug.Log($"Буллет - {_collisionBulletFilter}");
+                //TODO: обработка реакции на ивент
+            }
         }
+
 
     }
     

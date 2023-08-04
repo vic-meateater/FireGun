@@ -1,14 +1,28 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Scellecs.Morpeh.Globals.Events;
 using UnityEngine;
+using Scellecs.Morpeh.Globals.Events;
+using Scellecs.Morpeh.Globals.ECS;
+using Scellecs.Morpeh;
 
 public class CollisionHandler : MonoBehaviour
 {
+    [SerializeField] private GlobalEventObject _collisionEvent;
+
     private void OnCollisionEnter(Collision other)
     {
-        GlobalEvent globalEvent = ScriptableObject.CreateInstance<GlobalEvent>();
-        globalEvent.Publish();
+        _collisionEvent.Publish(other.gameObject);
+        //TODO: как-то передать entity id 
+
+
+
+        //World.Default.
+
+
+        //var instanceID = gameObject.GetInstanceID();
+
+
+        //var entity = World.Default.GetEntity(instanceID);
+        //Debug.Log(entity);
+        //entity.AddComponent<CollisionReactComponent>();
+       
     }
 }

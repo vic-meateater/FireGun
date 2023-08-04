@@ -165,6 +165,8 @@ MonoBehaviour:
   - enabled: 1
     system: {fileID: 11400000, guid: 2bac71cd71a74c64692bd5bc045a7c73, type: 2}
   - enabled: 1
+    system: {fileID: 11400000, guid: c93199fa83deadf4db559a74bee356da, type: 2}
+  - enabled: 1
     system: {fileID: 11400000, guid: c3c46d323b99b2146a39a6bd5f305574, type: 2}
   fixedUpdateSystems:
   - enabled: 1
@@ -451,6 +453,8 @@ MonoBehaviour:
     <GameConfig>k__BackingField: {fileID: 11400000, guid: cc172c3bb1c923346906915010aa8ac4,
       type: 2}
     <WeaponConfig>k__BackingField: {fileID: 11400000, guid: c4e2c8ba985c55b4e8cbc9fb27ba60f7,
+      type: 2}
+    <MonoEventStorageConfig>k__BackingField: {fileID: 11400000, guid: 4c4610dcc4c922e4bbb4fe5b8f646bb3,
       type: 2}
 --- !u!4 &388015323
 Transform:

@@ -10,15 +10,15 @@ using Scellecs.Morpeh;
 public sealed class HealthSystem : UpdateSystem 
 {
     private Filter _filter;
-
+    
     public override void OnAwake()
     {
         _filter = World.Filter.With<HealthComponent>();
     }
 
-    public override void OnUpdate(float deltaTime) 
+    public override void OnUpdate(float deltaTime)
     {
-        foreach (var entiity in _filter) 
+        foreach (var entiity in _filter)
         {
             ref var healthComponent = ref entiity.GetComponent<HealthComponent>();
             Debug.Log(healthComponent.healthPoints);
