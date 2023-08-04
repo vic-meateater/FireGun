@@ -129,17 +129,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializedComponents:
-  - rid: 663547653007605763
+  - rid: 663547677589372947
   references:
     version: 2
     RefIds:
-    - rid: 663547653007605763
+    - rid: 663547677589372947
       type: {class: WeaponComponent, ns: , asm: Assembly-CSharp}
       data:
         BulletSpawnPoint: {fileID: 8296785380084617702}
         BulletPrefab: {fileID: 730460773223960952, guid: 8e93b16066a2f514d837909a5464d9c4,
           type: 3}
         BulletAmount: 7
-        WeaponMoveSpeed: 0
-        FireRate: 2
-        LastShotTime: 0
+        WeaponMoveSpeed: 1
+        FireRate: 1
+        LastShotTime: 1

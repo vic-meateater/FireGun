@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Client.Scriptable_Objects
@@ -6,5 +7,7 @@ namespace Client.Scriptable_Objects
     public class GameConfig: ScriptableObject
     {
         [field: SerializeField] public GameObject SpawnPoint { get; private set; }
+        [field: SerializeField] public List<GameObject> EnemySpawnPoint { get; private set; }
+        [field: SerializeField] public GameObject EnemiesHolder{ get; private set; }
     }
 }

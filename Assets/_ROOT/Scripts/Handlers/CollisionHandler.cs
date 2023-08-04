@@ -10,7 +10,7 @@ public class CollisionHandler : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         _collisionEvent.Publish(other.gameObject);
-        //TODO: как-то передать entity id 
+        //TODO: пїЅпїЅпїЅ-пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ entity id 
 
 
 
@@ -23,6 +23,15 @@ public class CollisionHandler : MonoBehaviour
         //var entity = World.Default.GetEntity(instanceID);
         //Debug.Log(entity);
         //entity.AddComponent<CollisionReactComponent>();
+        
+        
        
     }
+    
+    // private async UniTask InitializeAndDeactivateAsync()
+    // {
+    //     GameObject enemy = _enemiesPool.Get();
+    //     await UniTask.Delay(TimeSpan.FromSeconds(0.1));
+    //     enemy.SetActive(false);
+    // }
 }

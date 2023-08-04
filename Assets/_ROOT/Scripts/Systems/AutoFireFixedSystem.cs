@@ -23,13 +23,13 @@ public sealed class AutoFireFixedSystem : FixedUpdateSystem
         _weaponFilter = World.Filter.With<WeaponComponent>();
         _collisionEntityFilter = World.Filter.With<CollisionReactComponent>();
         _collisionBulletFilter = World.Filter.With<CollisionReactComponent>().With<BulletComponent>();
-        OnBulletCollisionReact.Subscribe(onReact);
+        OnBulletCollisionReact.Subscribe(OnReact);
 
     }
 
-    private void onReact(IEnumerable<UnityEngine.Object> obj)
+    private void OnReact(IEnumerable<UnityEngine.Object> obj)
     {
-        
+        Debug.Log("Реакция на пулю здеся");
     }
 
     public override void OnUpdate(float deltaTime)

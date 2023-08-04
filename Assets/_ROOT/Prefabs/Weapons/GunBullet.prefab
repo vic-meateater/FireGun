@@ -73,21 +73,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializedComponents:
-  - rid: 7026622602826219524
-  - rid: 663547653007605771
+  - rid: 663547677589372939
   references:
     version: 2
     RefIds:
-    - rid: 663547653007605771
-      type: {class: CollisionComponent, ns: , asm: Assembly-CSharp}
+    - rid: 663547677589372939
+      type: {class: BulletInfo, ns: , asm: Assembly-CSharp}
       data:
-        Collider: {fileID: 730460773223960952}
-    - rid: 7026622602826219524
-      type: {class: BulletComponent, ns: , asm: Assembly-CSharp}
-      data:
-        Prefab: {fileID: 730460773223960952}
-        SpawnPosition: {fileID: 0}
-        Transform: {fileID: 4894468622561795943}
+        bulletType: 0
+        bulletPrefab: {fileID: 730460773223960952}
 --- !u!54 &7873992120585373305
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -9,8 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52f429ea1c7ab564c80e5de4289e621d, type: 3}
-  m_Name: New Auto Fire Fixed System
+  m_Script: {fileID: 11500000, guid: 7274f613a61995c45b7c0a4346a83d45, type: 3}
+  m_Name: Enemy Spawn System
   m_EditorClassIdentifier: 
-  OnBulletCollisionReact: {fileID: 11400000, guid: d3c7c70d1bf938c4987fa3fa89c20246,
-    type: 2}

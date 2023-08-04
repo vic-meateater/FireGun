@@ -11,6 +11,7 @@ using UnityEngine.Pool;
 public sealed class BulletInitializer : Initializer
 {
     private Filter _weaponFilter;
+    private ObjectPool<GameObject> _bulletPool;
     
     public override void OnAwake()
     {
@@ -26,11 +27,14 @@ public sealed class BulletInitializer : Initializer
                 bullet => bullet.SetActive(true),
                 bullet => bullet.SetActive(false)
             );
+
+            _bulletPool = weapon.bulletPool;
         }
     }
 
     public override void Dispose()
     {
-        
+        _bulletPool.Clear();
+        _bulletPool.Dispose();
     }
 }
