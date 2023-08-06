@@ -58,8 +58,8 @@ public sealed class AutoFireFixedSystem : FixedUpdateSystem
             }
             if (OnBulletCollisionReact)
             {
-                Debug.Log($"Всего коллизий - {_collisionBulletFilter}");
-                Debug.Log($"Буллет - {_collisionBulletFilter}");
+                // Debug.Log($"Всего коллизий - {_collisionBulletFilter}");
+                // Debug.Log($"Буллет - {_collisionBulletFilter}");
                 //TODO: обработка реакции на ивент
             }
         }

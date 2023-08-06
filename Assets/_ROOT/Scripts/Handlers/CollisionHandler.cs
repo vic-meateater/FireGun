@@ -6,10 +6,12 @@ using Scellecs.Morpeh;
 public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] private GlobalEventObject _collisionEvent;
+    public GlobalEventComponent<WeaponComponent> _weaponComponent;
 
     private void OnCollisionEnter(Collision other)
     {
         _collisionEvent.Publish(other.gameObject);
+        
         //TODO: ���-�� �������� entity id 
 
 
@@ -27,11 +29,4 @@ public class CollisionHandler : MonoBehaviour
         
        
     }
-    
-    // private async UniTask InitializeAndDeactivateAsync()
-    // {
-    //     GameObject enemy = _enemiesPool.Get();
-    //     await UniTask.Delay(TimeSpan.FromSeconds(0.1));
-    //     enemy.SetActive(false);
-    // }
 }

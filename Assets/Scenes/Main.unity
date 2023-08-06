@@ -1259,26 +1259,26 @@ PrefabInstance:
     - target: {fileID: 4524004772060984245, guid: 9a53163ef48b7b54f8d1c8644ac2427b,
         type: 3}
       propertyPath: serializedComponents.Array.data[0]
-      value: 663547677589372948
+      value: 663547722094084096
       objectReference: {fileID: 0}
     - target: {fileID: 4524004772060984245, guid: 9a53163ef48b7b54f8d1c8644ac2427b,
         type: 3}
-      propertyPath: managedReferences[663547677589372933]
+      propertyPath: managedReferences[663547722094084096]
       value: Assembly-CSharp EnemiesHolderComponent
       objectReference: {fileID: 0}
     - target: {fileID: 4524004772060984245, guid: 9a53163ef48b7b54f8d1c8644ac2427b,
         type: 3}
-      propertyPath: managedReferences[663547677589372933].Parent
+      propertyPath: managedReferences[663547722094084096].Parent
       value: 
       objectReference: {fileID: 8322487894541452348}
     - target: {fileID: 4524004772060984245, guid: 9a53163ef48b7b54f8d1c8644ac2427b,
         type: 3}
-      propertyPath: managedReferences[663547677589372933].EnemiesPrefabs.Array.size
+      propertyPath: managedReferences[663547722094084096].EnemiesPrefabs.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4524004772060984245, guid: 9a53163ef48b7b54f8d1c8644ac2427b,
         type: 3}
-      propertyPath: managedReferences[663547677589372933].EnemiesPrefabs.Array.data[0]
+      propertyPath: managedReferences[663547722094084096].EnemiesPrefabs.Array.data[0]
       value: 
       objectReference: {fileID: 5385347672905478401, guid: 4b7668970444c7d459dc49e4a377ab02,
         type: 3}
