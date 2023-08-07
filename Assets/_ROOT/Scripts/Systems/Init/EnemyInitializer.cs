@@ -5,6 +5,7 @@ using Scellecs.Morpeh;
 using Scellecs.Morpeh.Systems;
 using UnityEngine;
 using Unity.IL2CPP.CompilerServices;
+using Unity.Mathematics;
 using UnityEngine.Pool;
 
 [Il2CppSetOption(Option.NullChecks, false)]
@@ -19,8 +20,11 @@ public sealed class EnemyInitializer : Initializer
     public override void OnAwake()
     {
         _gameData = World.Filter.With<GameData>().FirstOrDefault().GetComponent<GameData>();
+        //var enemyHolderGO = Instantiate(_gameData.GameConfig.EnemiesHolder, Vector3.zero, Quaternion.identity);
         ref var enemyHolder = ref World.Filter.With<EnemiesHolderComponent>().FirstOrDefault()
             .GetComponent<EnemiesHolderComponent>();
+
+
         var enemyPF = enemyHolder.EnemiesPrefabs.FirstOrDefault();
         var position = _gameData.GameConfig.EnemySpawnPoint.FirstOrDefault().transform.position;
         var parent = enemyHolder.Parent;

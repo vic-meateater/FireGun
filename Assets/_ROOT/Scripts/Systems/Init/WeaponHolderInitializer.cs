@@ -13,7 +13,7 @@ public sealed class WeaponHolderInitializer : Initializer
     private GameObject _weaponGO;
     private Filter _weaponHolderFilter;
     private Filter _weaponFilter;
-    private Filter _gameDataFilter;
+    private GameData _gameData;
 
     public override void OnAwake()
     {

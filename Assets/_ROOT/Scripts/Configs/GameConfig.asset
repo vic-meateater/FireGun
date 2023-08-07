@@ -15,6 +15,6 @@ MonoBehaviour:
   <SpawnPoint>k__BackingField: {fileID: 7061914932028974201, guid: 3c20267af85bf7b41bac92b4f3e081e2,
     type: 3}
   <EnemySpawnPoint>k__BackingField:
-  - {fileID: 0}
+  - {fileID: 8608268027167783142, guid: 16063624a77b99b4687e8ea5e9d17acd, type: 3}
   <EnemiesHolder>k__BackingField: {fileID: 4400747292206284838, guid: 9a53163ef48b7b54f8d1c8644ac2427b,
     type: 3}
