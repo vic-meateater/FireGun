@@ -24,12 +24,11 @@ public sealed class AutoFireFixedSystem : FixedUpdateSystem
         _collisionEntityFilter = World.Filter.With<CollisionReactComponent>();
         _collisionBulletFilter = World.Filter.With<CollisionReactComponent>().With<BulletComponent>();
         OnBulletCollisionReact.Subscribe(OnReact);
-
     }
 
     private void OnReact(IEnumerable<UnityEngine.Object> obj)
     {
-        Debug.Log("Реакция на пулю здеся");
+        //Debug.Log("Реакция на пулю здеся");
     }
 
     public override void OnUpdate(float deltaTime)
@@ -45,7 +44,6 @@ public sealed class AutoFireFixedSystem : FixedUpdateSystem
 
                 if (bulletGO != null)
                 {
-                    
                     bulletGO.transform.position = weapon.BulletSpawnPoint.position;
 
                     var bulletRigidbody = bulletGO.GetComponentInChildren<Rigidbody>();
@@ -56,6 +54,7 @@ public sealed class AutoFireFixedSystem : FixedUpdateSystem
                     weapon.LastShotTime = Time.time;
                 }
             }
+
             if (OnBulletCollisionReact)
             {
                 // Debug.Log($"Всего коллизий - {_collisionBulletFilter}");
@@ -63,13 +62,10 @@ public sealed class AutoFireFixedSystem : FixedUpdateSystem
                 //TODO: обработка реакции на ивент
             }
         }
-
-
     }
-    
+
     private bool CanShoot(WeaponComponent weapon)
     {
-        //TODO: заменить магическое число
         return Time.time - weapon.LastShotTime >= weapon.FireRate;
     }
 }

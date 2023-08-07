@@ -33,7 +33,7 @@ public sealed class DragWeaponSystem : UpdateSystem
             ref var inputComponent = ref entity.GetComponent<InputComponent>();
 
             Vector2 inputPosition = inputComponent.DragInput;
-            bool isPlayerTouch = inputComponent.IsPlayerTouch;
+            bool isPlayerTouch = inputComponent.IsPlayerTouchScreen;
 
 
             if (isPlayerTouch)

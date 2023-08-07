@@ -25,7 +25,7 @@ public sealed class InputSystem : UpdateSystem
         {
             ref var input = ref e.GetComponent<InputComponent>();
             input.DragInput = _playerInput.PlayerInput.Move.ReadValue<Vector2>();
-            input.IsPlayerTouch = _playerInput.PlayerInput.Touch.ReadValue<float>() > 0;
+            input.IsPlayerTouchScreen = _playerInput.PlayerInput.Touch.ReadValue<float>() > 0;
         }
     }
 }

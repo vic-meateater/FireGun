@@ -1,6 +1,7 @@
 using Scellecs.Morpeh;
 using UnityEngine;
 using Unity.IL2CPP.CompilerServices;
+using UnityEngine.Serialization;
 
 [System.Serializable]
 [Il2CppSetOption(Option.NullChecks, false)]
@@ -9,5 +10,5 @@ using Unity.IL2CPP.CompilerServices;
 public struct InputComponent : IComponent
 {
     public Vector2 DragInput;
-    public bool IsPlayerTouch;
+    public bool IsPlayerTouchScreen;
 }

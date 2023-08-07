@@ -1,7 +1,6 @@
 using UnityEngine;
 using Scellecs.Morpeh.Globals.Events;
 using Scellecs.Morpeh.Globals.ECS;
-using Scellecs.Morpeh;
 
 public class CollisionHandler : MonoBehaviour
 {
@@ -10,23 +9,9 @@ public class CollisionHandler : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        _collisionEvent.Publish(other.gameObject);
         
-        //TODO: ���-�� �������� entity id 
-
-
-
-        //World.Default.
-
-
-        //var instanceID = gameObject.GetInstanceID();
-
-
-        //var entity = World.Default.GetEntity(instanceID);
-        //Debug.Log(entity);
-        //entity.AddComponent<CollisionReactComponent>();
-        
-        
-       
+        //todo: не работает проверка
+        if(other.gameObject.TryGetComponent<EnemyDataComponent>(out var enemyData));
+            _collisionEvent.Publish(enemyData.Transform.gameObject);
     }
 }

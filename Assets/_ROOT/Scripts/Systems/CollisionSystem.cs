@@ -26,7 +26,8 @@ public sealed class CollisionSystem : UpdateSystem
 
     private void OnGlobalEventReact(IEnumerable<UnityEngine.Object> obj)
     {
-
+        if(obj == null) return;
+        
         var z = obj.FirstOrDefault().GetComponent<UniversalProvider>().Entity;
         var x = obj.FirstOrDefault().GetComponent<Transform>();
         z.Dispose();
