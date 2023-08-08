@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using Scellecs.Morpeh;
 using Scellecs.Morpeh.Globals.Events;
 using Scellecs.Morpeh.Systems;
@@ -24,6 +25,9 @@ public sealed class AnimToRagdollSystem : UpdateSystem
 
     private void OnAnimToRagdoll(IEnumerable<Object> obj)
     {
+        var rd = obj.FirstOrDefault().GameObject();
+        var x = rd.GetComponent<RagdollComponent>();
+        //Debug.Log(rd.Bones.Length);
         foreach (var o in obj)
         {
             //todo: получить объект и компонент
@@ -34,7 +38,7 @@ public sealed class AnimToRagdollSystem : UpdateSystem
 
     public override void OnUpdate(float deltaTime)
     {
-        _filter = World.Filter.With<RagdollComponent>();
+        _filter = World.Filter.With<RagdollComponent>().With<AnimToRagdollTagComponent>();
         
         foreach (var entity in _filter)
         {
@@ -50,8 +54,10 @@ public sealed class AnimToRagdollSystem : UpdateSystem
             ragdoll.Bones = ragdoll.RagdollRoot.GetComponentsInChildren<Rigidbody>();
             foreach (var bone in ragdoll.Bones)
             {
-                bone.isKinematic = true;
+                bone.isKinematic = false;
             }
+            ragdoll.Animator.enabled = false;
+            ragdoll.Collider.enabled = false;
         }
     }
 }

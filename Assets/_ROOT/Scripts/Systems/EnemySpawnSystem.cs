@@ -12,7 +12,7 @@ using Random = UnityEngine.Random;
 [CreateAssetMenu(menuName = "ECS/Systems/" + nameof(EnemySpawnSystem))]
 public sealed class EnemySpawnSystem : UpdateSystem
 {
-    private const int ENEMIES_ON_LEVEL = 12;
+    private const int ENEMIES_ON_LEVEL = 11;
 
     private GameData _gameData;
     private EnemiesHolderComponent _enemyHolder;

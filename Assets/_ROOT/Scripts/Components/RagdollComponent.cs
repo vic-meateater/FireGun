@@ -11,4 +11,6 @@ public struct RagdollComponent : IComponent
 {
     public Rigidbody[] Bones;
     public GameObject RagdollRoot;
+    public Animator Animator;
+    public Collider Collider;
 }

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52f429ea1c7ab564c80e5de4289e621d, type: 3}
   m_Name: New Auto Fire Fixed System
   m_EditorClassIdentifier: 
-  OnBulletCollisionReact: {fileID: 11400000, guid: d3c7c70d1bf938c4987fa3fa89c20246,
+  OnBulletCollisionReact: {fileID: 11400000, guid: fcbf64e429d1fde4ca5dff2f1f699965,
     type: 2}

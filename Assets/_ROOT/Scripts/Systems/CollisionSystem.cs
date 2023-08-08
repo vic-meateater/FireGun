@@ -31,6 +31,10 @@ public sealed class CollisionSystem : UpdateSystem
         //
         //Debug.Log(obj.FirstOrDefault().name);
         var rd = obj.FirstOrDefault().GetComponent<RagdollProvider>().Entity;
+        if(rd != null && !rd.Has<AnimToRagdollTagComponent>())
+            rd.AddComponent<AnimToRagdollTagComponent>();
+        
+        
         //AnimToRagdollEvent.Publish(rd.GetComponent<RagdollComponent>());
 
         //var x = obj.FirstOrDefault().GetComponent<Transform>();
