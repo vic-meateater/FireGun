@@ -145,6 +145,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _collisionEvent: {fileID: 11400000, guid: d3c7c70d1bf938c4987fa3fa89c20246, type: 2}
+  _animToRagdollEvent: {fileID: 11400000, guid: c7077739809f6eb4dbf51fd5a9fecae1,
+    type: 2}
 --- !u!1 &5836434918232937078
 GameObject:
   m_ObjectHideFlags: 0

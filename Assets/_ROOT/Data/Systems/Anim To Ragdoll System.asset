@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8627076d0d0712744aeb070bd318d324, type: 3}
-  m_Name: Collision System
+  m_Script: {fileID: 11500000, guid: 5ae3cb08bf38dd14d9977733903e97cb, type: 3}
+  m_Name: Anim To Ragdoll System
   m_EditorClassIdentifier: 
-  objectGlobalEventReact: {fileID: 11400000, guid: d3c7c70d1bf938c4987fa3fa89c20246,
-    type: 2}
-  AnimToRagdollEvent: {fileID: 11400000, guid: c7077739809f6eb4dbf51fd5a9fecae1, type: 2}
+  AnimToRagdollReact: {fileID: 11400000, guid: c7077739809f6eb4dbf51fd5a9fecae1, type: 2}

@@ -1,17 +1,17 @@
 using UnityEngine;
 using Scellecs.Morpeh.Globals.Events;
-using Scellecs.Morpeh.Globals.ECS;
 
 public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] private GlobalEventObject _collisionEvent;
-    public GlobalEventComponent<WeaponComponent> _weaponComponent;
+    [SerializeField] private GlobalEventObject _animToRagdollEvent;
 
     private void OnCollisionEnter(Collision other)
     {
-        
-        //todo: не работает проверка
-        if(other.gameObject.TryGetComponent<EnemyDataComponent>(out var enemyData));
-            _collisionEvent.Publish(enemyData.Transform.gameObject);
+        if (other.gameObject.TryGetComponent<EnemyDataProvider>(out var enemy))
+        {
+            _collisionEvent.Publish(enemy);
+            _animToRagdollEvent.Publish(enemy);
+        }
     }
 }
