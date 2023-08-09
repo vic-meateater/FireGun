@@ -130,11 +130,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializedComponents:
-  - rid: 663547769304907784
+  - rid: 7026622784744194049
   references:
     version: 2
     RefIds:
-    - rid: 663547769304907784
+    - rid: 7026622784744194049
       type: {class: WeaponComponent, ns: , asm: Assembly-CSharp}
       data:
         BulletSpawnPoint: {fileID: 8296785380084617702}

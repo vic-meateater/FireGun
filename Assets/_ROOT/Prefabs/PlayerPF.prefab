@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 7016389582645112127}
   - component: {fileID: 5847254421238203320}
   - component: {fileID: 2053513800824614357}
-  - component: {fileID: 2198271013429814485}
+  - component: {fileID: 5600428624880725530}
   m_Layer: 0
   m_Name: PlayerPF
   m_TagString: Untagged
@@ -318,19 +318,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedData:
     <Prefab>k__BackingField: {fileID: 2162377084173711796}
---- !u!114 &2198271013429814485
+--- !u!114 &5600428624880725530
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2162377084173711796}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8815d0ec7f548a4fb1660041155f7ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializedData:
-    MovementSpeed: 0
+    MovementSpeed: 2
     Transform: {fileID: 6298571058585042715}
     Direction: {x: 0, y: 0, z: 1}

@@ -2118,6 +2118,7 @@ GameObject:
   - component: {fileID: -5635951425943706141}
   - component: {fileID: 4829714853257949986}
   - component: {fileID: 7674022319238637630}
+  - component: {fileID: 7248071621881206793}
   m_Layer: 6
   m_Name: ZombieRDPF
   m_TagString: Enemies
@@ -2246,6 +2247,32 @@ MonoBehaviour:
     MovementSpeed: 1
     Transform: {fileID: 7042711999335787731}
     Direction: {x: 0, y: 0, z: -1}
+--- !u!114 &7248071621881206793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5385347672905478401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdafc0e0c771cfc4ab5601e3d62e60fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializedComponents:
+  - rid: 7026622784744194052
+  - rid: 7026622784744194053
+  references:
+    version: 2
+    RefIds:
+    - rid: 7026622784744194052
+      type: {class: AnimatorComponent, ns: , asm: Assembly-CSharp}
+      data:
+        Animator: {fileID: 8992561026376218807}
+    - rid: 7026622784744194053
+      type: {class: StateComponent, ns: , asm: Assembly-CSharp}
+      data:
+        CurrenState: 1
 --- !u!1 &5482565225389749816
 GameObject:
   m_ObjectHideFlags: 0

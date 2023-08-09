@@ -1,3 +1,4 @@
+using _ROOT.Scripts.Helpers;
 using Scellecs.Morpeh;
 using Scellecs.Morpeh.Systems;
 using UnityEngine;
@@ -16,8 +17,7 @@ public sealed class MovementForwardSystem : UpdateSystem
 
     public override void OnAwake()
     {
-        Debug.Log("Movement Forward System OnAwake");
-        _filter = World.Filter.With<MovableComponent>();
+        _filter = World.Filter.With<MovableComponent>().With<StateComponent>();
     }
 
     public override void OnUpdate(float deltaTime)
@@ -25,7 +25,8 @@ public sealed class MovementForwardSystem : UpdateSystem
         foreach (var entity in _filter)
         {
             ref var movableComponent = ref entity.GetComponent<MovableComponent>();
-
+            ref var state = ref entity.GetComponent<StateComponent>();
+            state.CurrenState = EntityStates.Walk;
             _movementSpeed = movableComponent.MovementSpeed;
             _transform = movableComponent.Transform;
             _direction = movableComponent.Direction;

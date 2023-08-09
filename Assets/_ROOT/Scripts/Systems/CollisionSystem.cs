@@ -5,6 +5,7 @@ using UnityEngine;
 using Unity.IL2CPP.CompilerServices;
 using System.Collections.Generic;
 using System.Linq;
+using _ROOT.Scripts.Helpers;
 using Unity.VisualScripting;
 
 [Il2CppSetOption(Option.NullChecks, false)]
@@ -31,7 +32,9 @@ public sealed class CollisionSystem : UpdateSystem
         
         if (rd != null && !rd.Has<AnimToRagdollTagComponent>())
             rd.AddComponent<AnimToRagdollTagComponent>();
-        
+        if (rd.Has<StateComponent>())
+            rd.GetComponent<StateComponent>().CurrenState = EntityStates.Dead;
+
 
 
         //AnimToRagdollEvent.Publish(rd.GetComponent<RagdollComponent>());

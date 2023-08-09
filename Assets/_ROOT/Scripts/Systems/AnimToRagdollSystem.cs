@@ -15,38 +15,28 @@ using UnityEngine.Serialization;
 public sealed class AnimToRagdollSystem : UpdateSystem
 {
     private Filter _filter;
-    
+
     public GlobalEventObject AnimToRagdollReact;
+
     public override void OnAwake()
     {
-    //    _filter = World.Filter.With<RagdollComponent>();
-        AnimToRagdollReact.Subscribe(OnAnimToRagdoll);
     }
 
     private void OnAnimToRagdoll(IEnumerable<Object> obj)
     {
-        var rd = obj.FirstOrDefault().GameObject();
-        var x = rd.GetComponent<RagdollComponent>();
-        //Debug.Log(rd.Bones.Length);
-        foreach (var o in obj)
-        {
-            //todo: получить объект и компонент
-            //var ragdoll = World.Filter.GetEntity(7);
-            //Debug.Log($"Shoot React Bones Count - {ragdoll.Bones.Length}");
-        }
     }
 
     public override void OnUpdate(float deltaTime)
     {
         _filter = World.Filter.With<RagdollComponent>().With<AnimToRagdollTagComponent>();
-        
+
         foreach (var entity in _filter)
         {
             ref var ragdoll = ref entity.GetComponent<RagdollComponent>();
             InitRagdoll(ref ragdoll);
         }
     }
-    
+
     private void InitRagdoll(ref RagdollComponent ragdoll)
     {
         if (ragdoll.RagdollRoot != null)
@@ -56,6 +46,7 @@ public sealed class AnimToRagdollSystem : UpdateSystem
             {
                 bone.isKinematic = false;
             }
+
             ragdoll.Animator.enabled = false;
             ragdoll.Collider.enabled = false;
         }
