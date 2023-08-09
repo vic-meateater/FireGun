@@ -10,4 +10,5 @@ public struct MovableComponent : IComponent
 {
     public float MovementSpeed;
     public Transform Transform;
+    public Vector3 Direction;
 }

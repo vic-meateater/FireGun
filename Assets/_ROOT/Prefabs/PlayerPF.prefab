@@ -325,7 +325,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2162377084173711796}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8815d0ec7f548a4fb1660041155f7ad, type: 3}
   m_Name: 
@@ -333,3 +333,4 @@ MonoBehaviour:
   serializedData:
     MovementSpeed: 0
     Transform: {fileID: 6298571058585042715}
+    Direction: {x: 0, y: 0, z: 1}

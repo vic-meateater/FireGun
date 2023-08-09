@@ -25,16 +25,15 @@ public sealed class CollisionSystem : UpdateSystem
 
     private void OnGlobalEventReact(IEnumerable<UnityEngine.Object> obj)
     {
-        
-        //todo: Fix here anim to ragdoll
-        // if(obj == null) return;
-        //
-        //Debug.Log(obj.FirstOrDefault().name);
         var rd = obj.FirstOrDefault().GetComponent<RagdollProvider>().Entity;
-        if(rd != null && !rd.Has<AnimToRagdollTagComponent>())
+        if(rd.Has<MovableComponent>())    
+            rd.RemoveComponent<MovableComponent>();
+        
+        if (rd != null && !rd.Has<AnimToRagdollTagComponent>())
             rd.AddComponent<AnimToRagdollTagComponent>();
         
-        
+
+
         //AnimToRagdollEvent.Publish(rd.GetComponent<RagdollComponent>());
 
         //var x = obj.FirstOrDefault().GetComponent<Transform>();

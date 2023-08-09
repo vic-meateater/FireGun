@@ -2117,6 +2117,7 @@ GameObject:
   - component: {fileID: 2392057043610670946}
   - component: {fileID: -5635951425943706141}
   - component: {fileID: 4829714853257949986}
+  - component: {fileID: 7674022319238637630}
   m_Layer: 6
   m_Name: ZombieRDPF
   m_TagString: Enemies
@@ -2229,6 +2230,22 @@ MonoBehaviour:
     RagdollRoot: {fileID: 5385347672905478401}
     Animator: {fileID: 8992561026376218807}
     Collider: {fileID: 2392057043610670946}
+--- !u!114 &7674022319238637630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5385347672905478401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8815d0ec7f548a4fb1660041155f7ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializedData:
+    MovementSpeed: 1
+    Transform: {fileID: 7042711999335787731}
+    Direction: {x: 0, y: 0, z: -1}
 --- !u!1 &5482565225389749816
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,8 +11,9 @@ public sealed class MovementForwardSystem : UpdateSystem
 {
     private float _movementSpeed;
     private Transform _transform;
+    private Vector3 _direction;
     private Filter _filter;
-    
+
     public override void OnAwake()
     {
         Debug.Log("Movement Forward System OnAwake");
@@ -27,13 +28,13 @@ public sealed class MovementForwardSystem : UpdateSystem
 
             _movementSpeed = movableComponent.MovementSpeed;
             _transform = movableComponent.Transform;
+            _direction = movableComponent.Direction;
+            MoveForward(_transform, _direction, _movementSpeed, deltaTime);
         }
-        MoveForward(_transform, _movementSpeed, deltaTime);
     }
 
-    private void MoveForward(Transform transform, float movementSpeed, float deltaTime)
+    private void MoveForward(Transform transform, Vector3 direction, float movementSpeed, float deltaTime)
     {
-        Vector3 forwardDirection = Vector3.forward;
-        transform.Translate(forwardDirection * _movementSpeed * deltaTime, Space.World);
+        transform.Translate(direction * movementSpeed * deltaTime, Space.World);
     }
 }
