@@ -128,71 +128,6 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
---- !u!1 &1886077821727781703
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4316506864180405837}
-  - component: {fileID: 8806927603704720302}
-  - component: {fileID: 8441807222951100372}
-  m_Layer: 0
-  m_Name: WeaponHolder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4316506864180405837
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1886077821727781703}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.358, z: 0.913}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6298571058585042715}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8806927603704720302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1886077821727781703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 278627939ca575941a957fbfaf27ac57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializedData:
-    WeaponPrefab: {fileID: 4630855400845448514, guid: 8db74ace0556c0f4596b0d84ee8e3950,
-      type: 3}
-    Transform: {fileID: 4316506864180405837}
-    Camera: {fileID: 8435167302481619516}
---- !u!114 &8441807222951100372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1886077821727781703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddf957c952608dc448f27307509b1632, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializedData:
-    DragInput: {x: 0, y: 0}
-    IsPlayerTouchScreen: 0
 --- !u!1 &2162377084173711796
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,7 +141,6 @@ GameObject:
   - component: {fileID: 7016389582645112127}
   - component: {fileID: 5847254421238203320}
   - component: {fileID: 2053513800824614357}
-  - component: {fileID: 5600428624880725530}
   m_Layer: 0
   m_Name: PlayerPF
   m_TagString: Untagged
@@ -318,19 +252,82 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedData:
     <Prefab>k__BackingField: {fileID: 2162377084173711796}
---- !u!114 &5600428624880725530
-MonoBehaviour:
+--- !u!1001 &1629837910785079700
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6298571058585042715}
+    m_Modifications:
+    - target: {fileID: 915050104914479827, guid: 6924cb7ebb9625446a8a3ce3f9cbc8b1,
+        type: 3}
+      propertyPath: m_Name
+      value: WeaponHolder
+      objectReference: {fileID: 0}
+    - target: {fileID: 3276660023657045977, guid: 6924cb7ebb9625446a8a3ce3f9cbc8b1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3276660023657045977, guid: 6924cb7ebb9625446a8a3ce3f9cbc8b1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.358
+      objectReference: {fileID: 0}
+    - target: {fileID: 3276660023657045977, guid: 6924cb7ebb9625446a8a3ce3f9cbc8b1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.913
+      objectReference: {fileID: 0}
+    - target: {fileID: 3276660023657045977, guid: 6924cb7ebb9625446a8a3ce3f9cbc8b1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3276660023657045977, guid: 6924cb7ebb9625446a8a3ce3f9cbc8b1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3276660023657045977, guid: 6924cb7ebb9625446a8a3ce3f9cbc8b1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3276660023657045977, guid: 6924cb7ebb9625446a8a3ce3f9cbc8b1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3276660023657045977, guid: 6924cb7ebb9625446a8a3ce3f9cbc8b1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3276660023657045977, guid: 6924cb7ebb9625446a8a3ce3f9cbc8b1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3276660023657045977, guid: 6924cb7ebb9625446a8a3ce3f9cbc8b1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7828985749736903226, guid: 6924cb7ebb9625446a8a3ce3f9cbc8b1,
+        type: 3}
+      propertyPath: serializedData.Camera
+      value: 
+      objectReference: {fileID: 8435167302481619516}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6924cb7ebb9625446a8a3ce3f9cbc8b1, type: 3}
+--- !u!4 &4316506864180405837 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3276660023657045977, guid: 6924cb7ebb9625446a8a3ce3f9cbc8b1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1629837910785079700}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2162377084173711796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8815d0ec7f548a4fb1660041155f7ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializedData:
-    MovementSpeed: 2
-    Transform: {fileID: 6298571058585042715}
-    Direction: {x: 0, y: 0, z: 1}

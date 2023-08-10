@@ -1,13 +1,12 @@
+using _ROOT.Scripts.Helpers;
 using Scellecs.Morpeh;
-using UnityEngine;
 using Unity.IL2CPP.CompilerServices;
 
 [System.Serializable]
 [Il2CppSetOption(Option.NullChecks, false)]
 [Il2CppSetOption(Option.ArrayBoundsChecks, false)]
 [Il2CppSetOption(Option.DivideByZeroChecks, false)]
-public struct EnemyDataComponent : IComponent
+public struct PlayerStatesComponent : IComponent
 {
-    public Transform Transform;
-    public int RewardPoints;
+    public PlayerStates CurrentState;
 }

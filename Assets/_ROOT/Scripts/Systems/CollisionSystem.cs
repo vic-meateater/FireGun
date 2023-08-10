@@ -14,6 +14,7 @@ using Unity.VisualScripting;
 [CreateAssetMenu(menuName = "ECS/Systems/" + nameof(CollisionSystem))]
 public sealed class CollisionSystem : UpdateSystem
 {
+    //todo: подчистить
     private Filter _bulletsFilter;
     public GlobalEventObject objectGlobalEventReact;
     public GlobalEventObject AnimToRagdollEvent;

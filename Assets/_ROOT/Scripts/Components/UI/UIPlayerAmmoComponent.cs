@@ -1,13 +1,13 @@
 using Scellecs.Morpeh;
-using UnityEngine;
+using TMPro;
 using Unity.IL2CPP.CompilerServices;
 
 [System.Serializable]
 [Il2CppSetOption(Option.NullChecks, false)]
 [Il2CppSetOption(Option.ArrayBoundsChecks, false)]
 [Il2CppSetOption(Option.DivideByZeroChecks, false)]
-public struct EnemyDataComponent : IComponent
+public struct UIPlayerAmmoComponent : IComponent
 {
-    public Transform Transform;
-    public int RewardPoints;
+    public TextMeshProUGUI UIPlayerCurrentAmmoCount;
+    public TextMeshProUGUI UIPlayerTotalAmmoCount;
 }

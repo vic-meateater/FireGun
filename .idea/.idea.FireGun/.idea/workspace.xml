@@ -5,24 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb95a29f-1b5e-48cb-ba00-c7c361db3bd0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Helpers.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FireGun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FireGun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CityVoxelPack/Assets/buildings/medium/Materials/building1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CityVoxelPack/Assets/buildings/medium/Materials/building1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CityVoxelPack/Assets/buildings/medium/Materials/building2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CityVoxelPack/Assets/buildings/medium/Materials/building2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CityVoxelPack/Assets/buildings/medium/Materials/building3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CityVoxelPack/Assets/buildings/medium/Materials/building3.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CityVoxelPack/Assets/buildings/medium/Materials/building4.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CityVoxelPack/Assets/buildings/medium/Materials/building4.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CityVoxelPack/Assets/buildings/props/doors/Materials/door.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CityVoxelPack/Assets/buildings/props/doors/Materials/door.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CityVoxelPack/Assets/buildings/props/windows/Materials/windows.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CityVoxelPack/Assets/buildings/props/windows/Materials/windows.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CityVoxelPack/Assets/pavements/Materials/pavement1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CityVoxelPack/Assets/pavements/Materials/pavement1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CityVoxelPack/Assets/roads/Materials/roads.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CityVoxelPack/Assets/roads/Materials/roads.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CityVoxelPack/Assets/roads/Materials/roadsBis.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CityVoxelPack/Assets/roads/Materials/roadsBis.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Zombie/Animations/Z_Walk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Zombie/Animations/Z_Walk.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Animations/ZombieAC.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Animations/ZombieAC.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Events.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Events/Anim To Ragdoll Event Obj.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Events/Anim To Ragdoll Event Obj.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Events/Bullet Collision Event.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Events/Bullet Collision Event.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Events/Collision Event Object.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Events/Collision Event Object.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Events/MyEvent.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Events/MyEvent.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Systems/Init/Weapon Holder Initializer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Data/Systems/Init/Weapon Holder Initializer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Systems/New Auto Fire Fixed System.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Data/Systems/New Auto Fire Fixed System.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Prefabs/Enemies/ZombieRDPF.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Prefabs/Enemies/ZombieRDPF.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Prefabs/PlayerPF.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Prefabs/PlayerPF.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Prefabs/Weapons/PistolDesrtEaglePF.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Prefabs/Weapons/PistolDesrtEaglePF.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/AnimToRagdollSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/AnimToRagdollSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Components/EnemyDataComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Components/EnemyDataComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Input/InputSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Input/InputSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/AnimationSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/AnimationSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/AutoFireFixedSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/AutoFireFixedSystem.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/CollisionSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/CollisionSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/Init/WeaponHolderInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/Init/WeaponHolderInitializer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/Init/WeaponHolderInitializer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/Init/WeaponHolderInitializer.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/MovementForwardSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/MovementForwardSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/UIButtonClickedSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/UIButtonClickedSystem.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +49,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Components/InitLevelComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Components/MovableComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Components/PlayerData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Components/UI/UIPlayerAmmoComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Components/WeaponComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Components/WeaponHolderComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Handlers/CollisionHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Helpers/PlayerStates.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Providers/EnemyDataProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Providers/EnemyHolderProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Providers/GameDataProvider.cs" root0="FORCE_HIGHLIGHTING" />
@@ -52,6 +65,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Providers/UIStartButtonClickedProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Providers/WeaponHolderProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/ScriptableObjects/WeaponConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/AmmoCountSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/AnimToRagdollSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/CollisionSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/DragWeaponSystem.cs" root0="FORCE_HIGHLIGHTING" />
@@ -61,7 +75,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/Init/RagdollInitializer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/MovementForwardSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/UI/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.scellecs.morpeh@46f35461fb/Core/SystemsGroupExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.scellecs.morpeh@46f35461fb/Core/SystemsGroupExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.scellecs.morpeh@46f35461fb/Core/WorldExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.scellecs.morpeh@46f35461fb/Scellecs.Morpeh.asmdef" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.scellecs.morpeh@46f35461fb/Unity/Providers/UniversalProvider.cs" root0="SKIP_HIGHLIGHTING" />
@@ -80,28 +94,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "SolutionBuilderGeneralOptionsPage",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;SolutionBuilderGeneralOptionsPage&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\vm\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\vm\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\vm\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\vm\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\vm\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\vm\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.5f1\Editor\Unity.exe" />
@@ -179,6 +193,7 @@
       <workItem from="1691504245241" duration="3786000" />
       <workItem from="1691515142635" duration="4462000" />
       <workItem from="1691556235853" duration="8665000" />
+      <workItem from="1691639336541" duration="15727000" />
     </task>
     <servers />
   </component>

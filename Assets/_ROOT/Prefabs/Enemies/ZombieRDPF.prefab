@@ -2214,6 +2214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedData:
     Transform: {fileID: 7042711999335787731}
+    RewardPoints: 1
 --- !u!114 &4829714853257949986
 MonoBehaviour:
   m_ObjectHideFlags: 0

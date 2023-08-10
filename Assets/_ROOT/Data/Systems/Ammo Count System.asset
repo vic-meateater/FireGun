@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1331288da4f13949aba8a177c387f38, type: 3}
-  m_Name: Weapon Holder Initializer
+  m_Script: {fileID: 11500000, guid: 53dd4f73baa318843864947306ebf946, type: 3}
+  m_Name: Ammo Count System
   m_EditorClassIdentifier: 
   GlobalPlayerCurrentAmmoCount: {fileID: 11400000, guid: 3e88ab8a15b11cb49b48af634fcdbd1a,
+    type: 2}
+  CanFireBoolGlobalEvent: {fileID: 11400000, guid: 2a597e02c5de87b44bb6bb24e2be2c79,
     type: 2}
