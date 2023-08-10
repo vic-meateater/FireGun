@@ -1,6 +1,8 @@
 using System;
+using System.Collections.Generic;
 using _ROOT.Scripts.Helpers;
 using Scellecs.Morpeh;
+using Scellecs.Morpeh.Globals.Events;
 using Scellecs.Morpeh.Systems;
 using UnityEngine;
 using Unity.IL2CPP.CompilerServices;
@@ -12,12 +14,20 @@ using Unity.IL2CPP.CompilerServices;
 public sealed class AnimationSystem : UpdateSystem
 {
     private Filter _states;
-    private int _moveAnimation;    
+    private int _moveAnimation;
+
+    public GlobalEventBool isCanShoot;
 
     public override void OnAwake()
     {
         _states = World.Filter.With<StateComponent>().With<AnimatorComponent>();
         _moveAnimation = Animator.StringToHash("Walk");
+        isCanShoot.Subscribe(OnCanShoot);
+    }
+
+    private void OnCanShoot(IEnumerable<bool> obj)
+    {
+        Debug.Log("AnimationSystem");
     }
 
     public override void OnUpdate(float deltaTime)

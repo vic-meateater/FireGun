@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 52f429ea1c7ab564c80e5de4289e621d, type: 3}
-  m_Name: New Auto Fire Fixed System
+  m_Name: AutoFire Fixed System
   m_EditorClassIdentifier: 
   OnBulletCollisionReact: {fileID: 11400000, guid: fcbf64e429d1fde4ca5dff2f1f699965,
     type: 2}
-  GlobalPlayerCurrentAmmoCount: {fileID: 11400000, guid: 3e88ab8a15b11cb49b48af634fcdbd1a,
+  GlobalIntCurrentBulletCount: {fileID: 11400000, guid: 3e88ab8a15b11cb49b48af634fcdbd1a,
     type: 2}
   CanFireBoolGlobalEventReact: {fileID: 11400000, guid: 2a597e02c5de87b44bb6bb24e2be2c79,
     type: 2}

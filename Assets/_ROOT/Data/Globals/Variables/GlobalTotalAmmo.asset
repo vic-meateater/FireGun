@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c05c567e33e14d80835a9438e3f4c4e2, type: 3}
-  m_Name: GlobalPlayerCurrentAmmo
+  m_Name: GlobalTotalAmmo
   m_EditorClassIdentifier: 
   internalEntityID: -1
   value: 0

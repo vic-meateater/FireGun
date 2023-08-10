@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eebadbc5a1b43e94aa981d26f0bfff3a, type: 3}
   m_Name: Animation System
   m_EditorClassIdentifier: 
+  isCanShoot: {fileID: 11400000, guid: 2a597e02c5de87b44bb6bb24e2be2c79, type: 2}

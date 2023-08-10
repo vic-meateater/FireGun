@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 39633221809707376}
   - component: {fileID: 7737769940222107909}
   - component: {fileID: 290013828878664992}
-  - component: {fileID: 7061564467670470919}
+  - component: {fileID: 2299787048577668961}
   m_Layer: 0
   m_Name: PistolDesrtEaglePF
   m_TagString: Untagged
@@ -117,7 +117,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &7061564467670470919
+--- !u!114 &2299787048577668961
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,11 +130,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializedComponents:
-  - rid: 7026622802916278277
+  - rid: 663547810790768646
+  - rid: 663547810790768663
   references:
     version: 2
     RefIds:
-    - rid: 7026622802916278277
+    - rid: 663547810790768646
+      type: {class: PlayerTagComponent, ns: , asm: Assembly-CSharp}
+    - rid: 663547810790768663
       type: {class: WeaponComponent, ns: , asm: Assembly-CSharp}
       data:
         BulletSpawnPoint: {fileID: 8296785380084617702}
@@ -142,7 +145,7 @@ MonoBehaviour:
           type: 3}
         BulletAmount: 7
         WeaponMoveSpeed: 1
-        FireRate: 1
+        FireRate: 0.5
         LastShotTime: 1
 --- !u!1 &9083560097093777695
 GameObject:

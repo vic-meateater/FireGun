@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e52678b28af45d46a81024129b84e33, type: 3}
   m_Name: UI Ammo Count Late System
   m_EditorClassIdentifier: 
-  GlobalPlayerCurrentAmmoCount: {fileID: 11400000, guid: 3e88ab8a15b11cb49b48af634fcdbd1a,
+  GlobalIntCurrentBulletCount: {fileID: 11400000, guid: 3e88ab8a15b11cb49b48af634fcdbd1a,
     type: 2}
-  GlobalPlayerTotalAmmoCount: {fileID: 11400000, guid: 71c65e3766d7fd847a5efa3ce17a08a8,
+  GlobalIntTotalBulletCount: {fileID: 11400000, guid: 71c65e3766d7fd847a5efa3ce17a08a8,
     type: 2}

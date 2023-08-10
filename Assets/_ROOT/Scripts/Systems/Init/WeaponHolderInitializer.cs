@@ -13,14 +13,11 @@ public sealed class WeaponHolderInitializer : Initializer
 {
     private GameObject _weaponGO;
     private Filter _weaponHolderFilter;
-    private Filter _weaponFilter;
     private GameData _gameData;
-    public GlobalVariableInt GlobalPlayerCurrentAmmoCount;
 
     public override void OnAwake()
     {
         _weaponHolderFilter = World.Filter.With<WeaponHolderComponent>();
-        _weaponFilter = World.Filter.With<WeaponComponent>();
 
         foreach (var entityHolder in _weaponHolderFilter)
         {
@@ -28,12 +25,6 @@ public sealed class WeaponHolderInitializer : Initializer
             var weaponPF = weaponHolder.WeaponPrefab;
             _weaponGO = Instantiate(weaponPF, weaponHolder.Transform.position, Quaternion.identity,
                 weaponHolder.Transform);
-        }
-
-        foreach (var entity in _weaponFilter)
-        {
-            ref var weapon = ref entity.GetComponent<WeaponComponent>();
-            GlobalPlayerCurrentAmmoCount.Value = weapon.BulletAmount;
         }
     }
 

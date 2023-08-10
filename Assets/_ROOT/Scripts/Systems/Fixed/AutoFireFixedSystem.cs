@@ -8,6 +8,7 @@ using System.Linq;
 using _ROOT.Scripts.Helpers;
 using Scellecs.Morpeh.Globals.Variables;
 using Unity.VisualScripting;
+using UnityEngine.Serialization;
 
 [Il2CppSetOption(Option.NullChecks, false)]
 [Il2CppSetOption(Option.ArrayBoundsChecks, false)]
@@ -18,19 +19,21 @@ public sealed class AutoFireFixedSystem : FixedUpdateSystem
     private Filter _weaponFilter;
     private PlayerStatesComponent _currenPlayerState;
     private WeaponComponent _weapon;
-    private bool _isEnoughtAmmo;
+    private bool _isEnoughAmmo = false;
 
     public GlobalEventObject OnBulletCollisionReact;
-    public GlobalVariableInt GlobalPlayerCurrentAmmoCount;
+    public GlobalVariableInt GlobalIntCurrentBulletCount;
     public GlobalEventBool CanFireBoolGlobalEventReact;
 
     public override void OnAwake()
     {
+        Debug.Log("OnAwake AutoFireFixedSystem");
         _weaponFilter = World.Filter.With<WeaponComponent>();
         OnBulletCollisionReact.Subscribe(OnReact);
-        CanFireBoolGlobalEventReact.Subscribe(OnCanShoot);
+        CanFireBoolGlobalEventReact.Subscribe(OnCanFire);
     }
     
+
     public override void OnUpdate(float deltaTime)
     {
         _currenPlayerState = World.Filter.With<PlayerStatesComponent>().FirstOrDefault()
@@ -48,7 +51,7 @@ public sealed class AutoFireFixedSystem : FixedUpdateSystem
 
                 if (bulletGO != null)
                 {
-                    GlobalPlayerCurrentAmmoCount.Value -= 1;
+                    GlobalIntCurrentBulletCount.Value -= 1;
                     bulletGO.transform.position = weapon.BulletSpawnPoint.position;
 
                     var bulletRigidbody = bulletGO.GetComponentInChildren<Rigidbody>();
@@ -63,19 +66,16 @@ public sealed class AutoFireFixedSystem : FixedUpdateSystem
         }
     }
 
-    private void OnCanShoot(IEnumerable<bool> obj)
+    private void OnCanFire(IEnumerable<bool> obj)
     {
-        _isEnoughtAmmo = obj.FirstOrDefault();
+        Debug.Log($"HAs bukket - {obj.FirstOrDefault()}");
+        _isEnoughAmmo = obj.FirstOrDefault();
     }
-
     
-    private void OnReact(IEnumerable<UnityEngine.Object> obj)
-    {
+    private void OnReact(IEnumerable<UnityEngine.Object> obj) =>
         _weapon.bulletPool.Release(obj.FirstOrDefault().GameObject());
-    }
 
-    private bool CanShoot(WeaponComponent weapon)
-    {
-        return Time.time - weapon.LastShotTime >= weapon.FireRate;
-    }
+
+    private bool CanShoot(WeaponComponent weapon) =>
+        Time.time - weapon.LastShotTime >= weapon.FireRate;
 }
