@@ -17,4 +17,5 @@ public struct WeaponComponent : IComponent
     public float WeaponMoveSpeed;
     public float FireRate;
     public float LastShotTime;
+    public int BulletPerShootCount;
 }

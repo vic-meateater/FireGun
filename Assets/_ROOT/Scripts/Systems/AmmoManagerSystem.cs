@@ -1,10 +1,10 @@
-using Scellecs.Morpeh;
+using System.Collections.Generic;
 using Scellecs.Morpeh.Globals.Events;
 using Scellecs.Morpeh.Globals.Variables;
 using Scellecs.Morpeh.Systems;
 using UnityEngine;
 using Unity.IL2CPP.CompilerServices;
-using UnityEngine.Serialization;
+
 
 [Il2CppSetOption(Option.NullChecks, false)]
 [Il2CppSetOption(Option.ArrayBoundsChecks, false)]
@@ -12,19 +12,27 @@ using UnityEngine.Serialization;
 [CreateAssetMenu(menuName = "ECS/Systems/" + nameof(AmmoManagerSystem))]
 public sealed class AmmoManagerSystem : UpdateSystem
 {
-    public GlobalVariableInt GlobalIntCurrentBulletCount;
+    public GlobalVariableInt GIntCurrentBulletCount;
     public GlobalEventBool CanFire;
+    public GlobalEvent GENotEnoughAmmoReact;
 
     
     public override void OnAwake()
     {
         Debug.Log("Loading ammo manager");
+        GENotEnoughAmmoReact.Subscribe(OnGENotEnoughAmmo);
     }
+
+        
 
     public override void OnUpdate(float deltaTime)
     {
-        //todo: не работает 
-            var canShoot = GlobalIntCurrentBulletCount.Value > 0;
-            CanFire.Publish(canShoot);
+
+    }
+    
+    private void OnGENotEnoughAmmo(IEnumerable<int> obj)
+    {
+        Debug.Log($"OnGENotEnoughAmmo - {obj}");
+        GIntCurrentBulletCount.Value += 7;
     }
 }

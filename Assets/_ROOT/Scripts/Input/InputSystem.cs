@@ -13,7 +13,8 @@ public sealed class InputSystem : UpdateSystem
     private Filter _inputFilter;
     private Filter _playerStateFilter;
     private PlayerInputAsset _playerInput;
-    
+    private bool _isPlayerTouchScreen = false;
+
     public override void OnAwake()
     {
         _inputFilter = World.Filter.With<InputComponent>().With<PlayerStatesComponent>();
@@ -27,13 +28,14 @@ public sealed class InputSystem : UpdateSystem
         {
             ref var input = ref e.GetComponent<InputComponent>();
             ref var playerState = ref e.GetComponent<PlayerStatesComponent>();
-            
+
             input.DragInput = _playerInput.PlayerInput.Move.ReadValue<Vector2>();
             input.IsPlayerTouchScreen = _playerInput.PlayerInput.Touch.ReadValue<float>() > 0;
-            
-            var isPlayerMouseMoving = input.DragInput == Vector2.zero;
 
-            playerState.CurrentState = input.IsPlayerTouchScreen || isPlayerMouseMoving
+            //_isPlayerMouseMoving = input.DragInput == Vector2.zero;
+            _isPlayerTouchScreen = input.IsPlayerTouchScreen;
+
+            playerState.CurrentState = _isPlayerTouchScreen
                 ? PlayerStates.AutoShooting
                 : PlayerStates.Idle;
         }

@@ -6,27 +6,27 @@
   <component name="ChangeListManager">
     <list default="true" id="cb95a29f-1b5e-48cb-ba00-c7c361db3bd0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FireGun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FireGun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Globals/Events/CanFireBoolGlobalEvent.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Globals/Events/CanFireBoolGlobalEvent.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Globals/Variables/GlobalPlayerCurrentAmmo.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Globals/Variables/GlobalPlayerCurrentAmmo.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Globals/Variables/GlobalPlayerTotalAmmo.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Globals/Variables/GlobalPlayerTotalAmmo.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Systems/Ammo Count System.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Systems/Ammo Count System.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Systems/Animation System.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Data/Systems/Animation System.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Systems/Late/UI Ammo Count Late System.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Data/Systems/Late/UI Ammo Count Late System.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Systems/New Auto Fire Fixed System.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Systems/New Auto Fire Fixed System.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/link.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/link.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Resources/Sirenix/GlobalSerializationConfig.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Resources/Sirenix/GlobalSerializationConfig.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Systems/Ammo Manager System.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Data/Systems/Ammo Manager System.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Data/Systems/AutoFire Fixed System.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Data/Systems/AutoFire Fixed System.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Prefabs/WeaponPF.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Prefabs/WeaponPF.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Prefabs/Weapons/PistolDesrtEaglePF.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Prefabs/Weapons/PistolDesrtEaglePF.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/AmmoCountSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/AmmoManagerSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/AmmoCountSystem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/AmmoManagerSystem.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Components/WeaponComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Components/WeaponComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Input/InputSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Input/InputSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/AmmoManagerSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/AmmoManagerSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/AnimationSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/AnimationSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/Fixed/AutoFireFixedSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/Fixed/AutoFireFixedSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/Init/WeaponHolderInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/Init/WeaponHolderInitializer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/Late/UIAmmoCountLateSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/Late/UIAmmoCountLateSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/UI/UIButtonClickedSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/UI/UIButtonClickedSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +59,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Providers/WeaponHolderProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Providers/WeaponProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/ScriptableObjects/WeaponConfig.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/AmmoCountSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/AnimToRagdollSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/CollisionSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_ROOT/Scripts/Systems/DragWeaponSystem.cs" root0="FORCE_HIGHLIGHTING" />
@@ -98,7 +97,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "SolutionBuilderGeneralOptionsPage",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -144,10 +143,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="18104">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="18104" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -188,6 +187,7 @@
       <workItem from="1691556235853" duration="8665000" />
       <workItem from="1691639336541" duration="15727000" />
       <workItem from="1691676698030" duration="8783000" />
+      <workItem from="1691733958285" duration="9236000" />
     </task>
     <servers />
   </component>
@@ -206,5 +206,9 @@
         <PinnedItemInfo parentTag="Type#Scellecs.Morpeh.Entity" memberName="entityId" />
       </pinned-members>
     </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

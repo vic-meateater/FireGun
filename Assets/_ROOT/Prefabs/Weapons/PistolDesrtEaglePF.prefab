@@ -131,13 +131,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedComponents:
   - rid: 663547810790768646
-  - rid: 663547810790768663
+  - rid: 8682086017284702209
   references:
     version: 2
     RefIds:
     - rid: 663547810790768646
       type: {class: PlayerTagComponent, ns: , asm: Assembly-CSharp}
-    - rid: 663547810790768663
+    - rid: 8682086017284702209
       type: {class: WeaponComponent, ns: , asm: Assembly-CSharp}
       data:
         BulletSpawnPoint: {fileID: 8296785380084617702}
@@ -147,6 +147,7 @@ MonoBehaviour:
         WeaponMoveSpeed: 1
         FireRate: 0.5
         LastShotTime: 1
+        BulletPerShootCount: 1
 --- !u!1 &9083560097093777695
 GameObject:
   m_ObjectHideFlags: 0

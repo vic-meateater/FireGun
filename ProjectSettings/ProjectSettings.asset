@@ -800,7 +800,7 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Standalone: ODIN_INSPECTOR;ODIN_INSPECTOR_3;ODIN_INSPECTOR_3_1;MORPEH_BURST;MORPEH
+    Standalone: ODIN_INSPECTOR;ODIN_INSPECTOR_3;ODIN_INSPECTOR_3_1;MORPEH_BURST;MORPEH;ODIN_INSPECTOR_EDITOR_ONLY
     WebGL: MORPEH;ODIN_INSPECTOR;ODIN_INSPECTOR_3;ODIN_INSPECTOR_3_1;MORPEH_BURST
   additionalCompilerArguments: {}
   platformArchitecture: {}

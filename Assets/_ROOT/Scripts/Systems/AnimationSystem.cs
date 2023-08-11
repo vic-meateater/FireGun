@@ -14,21 +14,15 @@ using Unity.IL2CPP.CompilerServices;
 public sealed class AnimationSystem : UpdateSystem
 {
     private Filter _states;
-    private int _moveAnimation;
+    private int _walkAnimation;
 
-    public GlobalEventBool isCanShoot;
 
     public override void OnAwake()
     {
         _states = World.Filter.With<StateComponent>().With<AnimatorComponent>();
-        _moveAnimation = Animator.StringToHash("Walk");
-        isCanShoot.Subscribe(OnCanShoot);
+        _walkAnimation = Animator.StringToHash("Walk");
     }
 
-    private void OnCanShoot(IEnumerable<bool> obj)
-    {
-        Debug.Log("AnimationSystem");
-    }
 
     public override void OnUpdate(float deltaTime)
     {
@@ -42,7 +36,7 @@ public sealed class AnimationSystem : UpdateSystem
                 case EntityStates.Idle:
                     break;
                 case EntityStates.Walk:
-                    animator.Animator.SetTrigger("Walk");
+                    animator.Animator.SetTrigger(_walkAnimation);
                     break;
                 case EntityStates.Attack:
                     break;

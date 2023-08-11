@@ -16,5 +16,4 @@ MonoBehaviour:
     type: 2}
   GlobalIntCurrentBulletCount: {fileID: 11400000, guid: 3e88ab8a15b11cb49b48af634fcdbd1a,
     type: 2}
-  CanFireBoolGlobalEventReact: {fileID: 11400000, guid: 2a597e02c5de87b44bb6bb24e2be2c79,
-    type: 2}
+  GENotEnoughAmmo: {fileID: 11400000, guid: 6b31cc8ce1b0d5b44bdd4aad106b8dfd, type: 2}

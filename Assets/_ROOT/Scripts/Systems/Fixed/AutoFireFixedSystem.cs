@@ -8,7 +8,7 @@ using System.Linq;
 using _ROOT.Scripts.Helpers;
 using Scellecs.Morpeh.Globals.Variables;
 using Unity.VisualScripting;
-using UnityEngine.Serialization;
+
 
 [Il2CppSetOption(Option.NullChecks, false)]
 [Il2CppSetOption(Option.ArrayBoundsChecks, false)]
@@ -18,21 +18,20 @@ public sealed class AutoFireFixedSystem : FixedUpdateSystem
 {
     private Filter _weaponFilter;
     private PlayerStatesComponent _currenPlayerState;
+
     private WeaponComponent _weapon;
-    private bool _isEnoughAmmo = false;
 
     public GlobalEventObject OnBulletCollisionReact;
     public GlobalVariableInt GlobalIntCurrentBulletCount;
-    public GlobalEventBool CanFireBoolGlobalEventReact;
+    public GlobalEvent GENotEnoughAmmo;
 
     public override void OnAwake()
     {
         Debug.Log("OnAwake AutoFireFixedSystem");
         _weaponFilter = World.Filter.With<WeaponComponent>();
         OnBulletCollisionReact.Subscribe(OnReact);
-        CanFireBoolGlobalEventReact.Subscribe(OnCanFire);
     }
-    
+
 
     public override void OnUpdate(float deltaTime)
     {
@@ -45,33 +44,34 @@ public sealed class AutoFireFixedSystem : FixedUpdateSystem
 
             var isValidPlayerState = _currenPlayerState.CurrentState == PlayerStates.AutoShooting;
 
-            if (isValidPlayerState && CanShoot(weapon))
+            if (isValidPlayerState && CanShoot(weapon) && IsEnoughBullet())
             {
                 var bulletGO = weapon.bulletPool.Get();
 
                 if (bulletGO != null)
                 {
-                    GlobalIntCurrentBulletCount.Value -= 1;
+                    GlobalIntCurrentBulletCount.Value -= weapon.BulletPerShootCount;
                     bulletGO.transform.position = weapon.BulletSpawnPoint.position;
 
                     var bulletRigidbody = bulletGO.GetComponentInChildren<Rigidbody>();
 
 
-                    //TODO: заменить скорость полета пули 4f
+                    //TODO: заменить скорость полета пули 19f
                     bulletRigidbody.velocity = weapon.BulletSpawnPoint.forward * 19f;
 
                     weapon.LastShotTime = Time.time;
                 }
             }
+            else if (!IsEnoughBullet())
+            {
+                GENotEnoughAmmo.Publish();
+            }
         }
     }
 
-    private void OnCanFire(IEnumerable<bool> obj)
-    {
-        Debug.Log($"HAs bukket - {obj.FirstOrDefault()}");
-        _isEnoughAmmo = obj.FirstOrDefault();
-    }
-    
+    private bool IsEnoughBullet() => GlobalIntCurrentBulletCount.Value > 0;
+
+
     private void OnReact(IEnumerable<UnityEngine.Object> obj) =>
         _weapon.bulletPool.Release(obj.FirstOrDefault().GameObject());
 
